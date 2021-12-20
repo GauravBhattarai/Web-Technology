@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<script type="text/javascript">
+		function add()
+		{
+			var a,b,result;
+			a=document.getElementById("one").value;
+			b=document.getElementById("two").value;
+			a=parseFloat(a);
+			b=parseFloat(b);
+			result=a+b;
+			document.first.res.value=result;
+		}
+
+		function sub()
+		{
+			var a,b,result;
+			a=document.getElementById("one").value;
+			b=document.getElementById("two").value;
+			a=parseFloat(a);
+			b=parseFloat(b);
+			result=a-b;
+			document.first.res.value=result;
+		}
+
+		function mul()
+		{
+			var a,b,result;
+			a=document.getElementById("one").value;
+			b=document.getElementById("two").value;
+			a=parseFloat(a);
+			b=parseFloat(b);
+			result=a*b;
+			document.first.res.value=result;
+		}
+
+		function div()
+		{
+			var a,b,result;
+			a=document.getElementById("one").value;
+			b=document.getElementById("two").value;
+			a=parseFloat(a);
+			b=parseFloat(b);
+			result=a/b;
+			document.first.res.value=result;
+		}
+	</script>
+</head>
+<body>
+
+	<form name="first">
+	<div>
+		First Number
+		<input type="text" id="one">
+	</div>
+	<div>
+		Second Number
+		<input type="text" id="two">
+	</div>
+	<div>
+		<input type="button" value="ADD" onclick="add()">
+		<input type="button" value="SUB" onclick="sub()">
+		<input type="button" value="PRODUCT" onclick="mul()">
+		<input type="button" value="DIVIDE" onclick="div()">
+	</div>
+	<div>
+		Result
+		<input type="text" name="res">
+	</div>
+	</form>
+	
+	
+	
+
+</body>
+</html>

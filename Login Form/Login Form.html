@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<style type="text/css">
+	.container{
+		min-height: 95vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container form{
+		background-color:rgb(184, 225, 255);
+		flex: 0 0 30%;
+		padding: 30px;
+		border-radius: 10px;
+	}
+
+	.button{
+		margin-left: 35%;
+	}
+
+	input{
+		padding: 5px 20px;
+		border-radius: 5px;
+		border:0.5px solid transparent;
+		margin: 10px; 
+		font-family: timesnewroman;
+	}
+
+	input[type=button]{
+		background-color: lightgrey;
+	}
+
+	input[type=button]:hover{
+		background-color:#F08080;
+	}
+
+	input[type=reset]:hover{
+		background-color:#F08080;
+	}
+
+</style>
+<body>
+	<div class="container">
+		
+	<form>
+		<div style="text-align: center;">Login here<br><br></div>
+
+	<div>Email<br>
+		<input type="text" name="Email">
+	</div>
+	<div>Password<br>
+		<input type="password" name="pass">
+	</div>
+
+	<div>Gender:<br>
+		<input type="radio" name="gender" value="male" checked> Male<br>
+		<input type="radio" name="gender" value="female" > Female<br>
+	</div>
+
+	<div>Hobby:<br>
+		<input type="checkbox" name="hobby" value="Cricket">Cricket<br>
+		<input type="checkbox" name="hobby" value="Football">Football<br>
+	</div>
+
+	<div class="button">
+		<input type="button" name="submit" value="Submit">
+	</div>	
+
+	<div class="button">
+		<input type="reset" name="Reset" value="Reset" > 
+	</div>
+
+	</form>
+	
+</div>
+</body>
+</html>
